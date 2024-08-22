@@ -1,6 +1,6 @@
 <h1 align="center">
     <br>
-    My GSoC Journey
+    <a href="https://ibb.co/QbHsHBH"><img src="https://i.ibb.co/6nt6tht/Screenshot-from-2024-08-22-21-41-13.png" alt="Screenshot-from-2024-08-22-21-41-13" border="0"></a>
     <br>
 </h1>
 
