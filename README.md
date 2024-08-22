@@ -180,3 +180,16 @@
 
 <h3>8. Clear Reporting</h3>
 <p>Detailed reports are generated during validation, highlighting passed, failed, and missed test cases for easy debugging and triaging.</p>
+
+<h2 id="thank-you"> Special Thanks</h2>
+<p>
+    I would like to extend my deepest gratitude to my amazing mentors who guided me throughout this journey:
+</p>
+<ul>
+    <li><strong>Gourav</strong> - Your wisdom and feedback were instrumental in helping me grow both technically and professionally.</li>
+    <li><strong>Shivam</strong> - Thank you for your constant support and for always being available to answer my questions.</li>
+</ul>
+<p>
+    I truly appreciate all the time and effort each of you put into making this project a success. Your mentorship has been invaluable, and I am forever grateful! 
+</p>
+
