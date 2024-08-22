@@ -8,8 +8,13 @@
 
 <a href="https://ibb.co/6P5smr9"><img src="https://i.ibb.co/0M3Jcm4/image-6.jpg" alt="image-6" width="800" border="0"></a>
 </h1>
+<h4>السلام عليكم</h4>
+<h4>احسب ان هذه الفرصة هي خير و نعمة من الله فالحمدلله الذي رزقني هذا فما توفيقي الا به و ما توكلي الا عليه </h4>
 
 <h1>Welcome to My GSoC Journey with Keploy 🐰!</h1>
+<h1 align="center">
+<a href="https://ibb.co/HFSFT7Y"><img src="https://i.ibb.co/j6N6khG/image-7.jpg" alt="image-7" border="0"></a>
+</h1>
 <p>
 Hello and welcome to my project for <strong>Google Summer of Code (GSoC)</strong>! I'm excited to share with you the journey of building contract testing capabilities for <strong>Keploy</strong>, a powerful open-source tool designed for automated end-to-end test generation, mocking, and test management.
 </p>
@@ -21,6 +26,8 @@ In the sections below, I will walk you through the features of the project, how 
 </p>
 <h2>Table of Contents</h2>
 <ul>
+<li><a href="#proposal">My Proposal</a></li>
+    
 <li><a href="#key-features">Key Features</a></li>
 <ul>
 <li><a href="#generate-contracts">Generate Contracts</a></li>
@@ -29,11 +36,16 @@ In the sections below, I will walk you through the features of the project, how 
 <li><a href="#support-http-methods">Support for Multiple HTTP Methods</a></li>
 <li><a href="#openapi-integration">OpenAPI Integration</a></li>
 <li><a href="#mock-generation">Mock Generation for Testing</a></li>
-<li><a href="#consumer-provider-modes">Consumer and Provider Modes</a></li>
 </ul>
 <li><a href="#matching-and-scoring">Matching and Scoring</a></li>
+<li><a href="#sample">Sample</a></li>
+<li><a href="#code">Code</a></li>
 <li><a href="#value-added">Value Added</a></li>
+
+
 </ul>
+<h2 id="proposal">My Proposal</h2>
+<p>You can find my proposal in this repo also you can ask me if there are any questions.</p>
 <h2 id="key-features">Key Features</h2>
 
 <h3 id="generate-contracts">1. Generate Contracts</h3>
@@ -62,7 +74,7 @@ keploy contract generate
 <p><strong>Command Example:</strong></p>
 <pre>
 <code>
-keploy contract download --service="email,notify" --path /local/path
+keploy contract download --driven "consumer" --path /local/path
 </code>
 </pre>
 <p>When executed, this command will:</p>
@@ -78,7 +90,7 @@ keploy contract download --service="email,notify" --path /local/path
 <p><strong>Command Example:</strong></p>
 <pre>
 <code>
-keploy contract validate --service="email,notify" --path /local/path
+keploy contract validate --driven "consumer" --path /local/path
 </code>
 </pre>
 <p>When executed, this command will:</p>
@@ -86,7 +98,11 @@ keploy contract validate --service="email,notify" --path /local/path
 <li>Compare the current service behavior against the contract</li>
 <li>Log and report any discrepancies</li>
 <li>Help identify if any API-breaking changes have occurred</li>
+<h1 align="center">
+<a href="https://ibb.co/1s0nTYg"><img src="https://i.ibb.co/jV85D9N/Screenshot-from-2024-08-22-23-16-20.png" alt="Screenshot-from-2024-08-22-23-16-20" border="0"></a>
+</h1>
 </ul>
+
 
 <h3 id="support-http-methods">4. Support for Multiple HTTP Methods</h3>
 <p>This project supports multiple HTTP methods, including <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>, and <code>PATCH</code>. It automatically maps request parameters such as headers, query parameters, and path variables, validating the structure of the response.</p>
@@ -96,39 +112,6 @@ keploy contract validate --service="email,notify" --path /local/path
 
 <h3 id="mock-generation">6. Mock Generation for Testing</h3>
 <p>The <code>mock</code> feature generates mock data based on service contracts. This allows testing services in isolation without needing real service dependencies, improving the testing process.</p>
-
-<h3 id="consumer-provider-modes">7. Consumer and Provider Modes</h3>
-<p>The system supports both consumer-driven and provider-driven contract testing:</p>
-<ul>
-<li><strong>Consumer-Driven Testing:</strong> Ensures that services adhere to the contracts provided by other services.</li>
-<li><strong>Provider-Driven Testing:</strong> Ensures that the provider maintains the contract expected by the consumers.</li>
-</ul>
-
-<h2 id="value-added">Value Added</h2>
-
-<h3>1. Automated Contract Verification</h3>
-<p>This project automates contract validation, reducing the manual effort required in integration testing. It automatically checks service compatibility against existing contracts.</p>
-
-<h3>2. Improved Service Integration</h3>
-<p>By ensuring services do not break integration points, contract testing reduces integration issues in microservice architectures.</p>
-
-<h3>3. Prevents Breaking Changes</h3>
-<p>The project highlights and prevents changes that violate the service contract, ensuring API stability and backward compatibility.</p>
-
-<h3>4. Faster Development Cycles</h3>
-<p>By validating contracts early, teams can resolve integration issues before they reach production, leading to faster and more reliable development cycles.</p>
-
-<h3>5. Mocking for Independent Testing</h3>
-<p>Mock data generation allows developers to simulate service interactions, enabling isolated testing without dependencies on real services.</p>
-
-<h3>6. OpenAPI Compliance</h3>
-<p>By using OpenAPI standards, this system ensures interoperability with various tools and services, automating the generation of OpenAPI documentation from service behaviors.</p>
-
-<h3>7. Cross-Environment Consistency</h3>
-<p>The system ensures that contract testing can be consistently applied across different environments (development, testing, production).</p>
-
-<h3>8. Clear Reporting</h3>
-<p>Detailed reports are generated during validation, highlighting passed, failed, and missed test cases for easy debugging and triaging.</p>
 
 <h2 id="matching-and-scoring">Matching and Scoring</h2>
 
@@ -168,3 +151,37 @@ keploy contract validate --service="email,notify" --path /local/path
 
 <h3>Error Handling</h3>
 <p>In case of mismatches or errors during comparison, the system logs detailed reports and differences between the expected and actual values. This helps developers understand where the mismatches occurred and take appropriate action.</p>
+<h2 id="Sample">Sample</h2>
+<h4>You can run a sample from this <a href="https://github.com/AhmedLotfy02/Consumer-Driven-Contract-Testing-Sample">repo</a></h4>
+
+
+<h2 id="code">Code</h2>
+<h4>You can take a look <a href="https://github.com/keploy/keploy/pull/2010">here</a>
+ </h4>
+<br>
+
+<h2 id="value-added">Value Added</h2>
+
+<h3>1. Automated Contract Verification</h3>
+<p>This project automates contract validation, reducing the manual effort required in integration testing. It automatically checks service compatibility against existing contracts.</p>
+
+<h3>2. Improved Service Integration</h3>
+<p>By ensuring services do not break integration points, contract testing reduces integration issues in microservice architectures.</p>
+
+<h3>3. Prevents Breaking Changes</h3>
+<p>The project highlights and prevents changes that violate the service contract, ensuring API stability and backward compatibility.</p>
+
+<h3>4. Faster Development Cycles</h3>
+<p>By validating contracts early, teams can resolve integration issues before they reach production, leading to faster and more reliable development cycles.</p>
+
+<h3>5. Mocking for Independent Testing</h3>
+<p>Mock data generation allows developers to simulate service interactions, enabling isolated testing without dependencies on real services.</p>
+
+<h3>6. OpenAPI Compliance</h3>
+<p>By using OpenAPI standards, this system ensures interoperability with various tools and services, automating the generation of OpenAPI documentation from service behaviors.</p>
+
+<h3>7. Cross-Environment Consistency</h3>
+<p>The system ensures that contract testing can be consistently applied across different environments (development, testing, production).</p>
+
+<h3>8. Clear Reporting</h3>
+<p>Detailed reports are generated during validation, highlighting passed, failed, and missed test cases for easy debugging and triaging.</p>
