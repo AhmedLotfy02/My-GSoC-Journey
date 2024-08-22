@@ -48,8 +48,12 @@ keploy contract generate
 <p>When executed, this command will:</p>
 <ul>
 <li>Capture HTTP requests and responses</li>
-<li>Generate contracts in OpenAPI-compliant formats</li>
+<li>Generate contracts in OpenAPI formats</li>
 <li>Save these contracts for future use (validation, mocking, etc.)</li>
+    
+<h1 align="center">
+    <a href="https://ibb.co/sP7pyn4"><img src="https://i.ibb.co/mBpr6kK/Screenshot-from-2024-08-22-22-51-14.png" alt="Screenshot-from-2024-08-22-22-51-14" border="0"></a>
+</h1>
 </ul>
 
 <h3 id="download-contracts">2. Download Contracts</h3>
